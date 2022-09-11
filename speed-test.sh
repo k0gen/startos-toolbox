@@ -3,12 +3,12 @@ echo
 echo " embassyOS Disk Speed Test"
 echo
 echo "Found:"
-detect=$(sudo lshw -class disk -class volume | grep -Ev '*-disk|description|physical|bus|logical|version|serial|size|capabilities' 2>&1)
+detect=$(lsblk -S -o TRAN,VENDOR,MODEL,SIZE | sed -n '2p' 2>&1)
 if [ -z "$detect" ]
 then
-sudo lshw -class disk -class storage | grep -Ev '*-storage|description|physical|bus|logical|version|serial|size|capabilities|width|clock|configuration|resources'
+lsblk -d -o TRAN,MODEL,SIZE | sed -n '5p'
 else
-sudo lshw -class disk -class volume | grep -Ev '*-disk|description|physical|bus|logical|version|serial|size|capabilities'
+lsblk -S -o TRAN,VENDOR,MODEL,SIZE | sed -n '2p'
 fi
 echo "testing ..."
 twrite=$(sudo dd if=/dev/zero of=/embassy-data/main/stest oflag=direct bs=128k count=16k 2>&1)
