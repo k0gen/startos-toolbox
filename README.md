@@ -29,3 +29,16 @@ curl -o tor-check.sh https://raw.githubusercontent.com/k0gen/embassy-toolbox/mai
 sh tor-check.sh
 ```
 > 💡You are advised to download it and add your Embassy's services .onion adresses.
+
+## 🩹 tor-fix.sh
+Will delete all Tor state files and restart the daemon showing tor conectivity status.
+
+To Run Paste that in a macOS Terminal or Linux shell prompt. 
+```
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/k0gen/embassy-toolbox/main/tor-fix.sh)"
+```
+or download and run locally
+```
+curl -o tor-check.sh https://raw.githubusercontent.com/k0gen/embassy-toolbox/main/tor-fix.sh
+sh tor-fix.sh
+```
