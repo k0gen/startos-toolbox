@@ -1,0 +1,18 @@
+[
+    {
+        "name": "Dolphin",
+        "models": [
+            {
+                "name": "Dolphin-13B",
+                "repo": "TheBloke/Dolphin-Llama-13B-GGML",
+                "files": [
+                    {
+                        "name": "q2_K",
+                        "filename": "dolphin-llama-13b.ggmlv3.q2_K.bin",
+                        "disk_space": 5510000000.0
+                    }
+                ]
+            }
+        ]
+    }
+]
