@@ -16,14 +16,19 @@
         ]
     },
     {
-        "name": "Nous-Hermes-13B",
-        "repo": "TheBloke/Nous-Hermes-13B-GGML",
-        "files": [
+        "name": "Nous",
+        "models": [
+            {
+                "name": "Nous-Hermes-13B",
+                "repo": "TheBloke/Nous-Hermes-13B-GGML",
+                "files": [
                     {
                         "name": "q4_0",
                         "filename": "nous-hermes-llama-2-7b.ggmlv3.q4_0.bin",
                         "disk_space": 3790000000.0
                     }
                 ]
+            }
+        ]
     },
 ]
