@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 fail=$(printf " [\033[31m fail \033[0m]")
 pass=$(printf " [\033[32m pass \033[0m]")
