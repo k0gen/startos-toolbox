@@ -1,21 +1,5 @@
 [
     {
-        "name": "Dolphin",
-        "models": [
-            {
-                "name": "Dolphin-13B",
-                "repo": "TheBloke/Dolphin-Llama-13B-GGML",
-                "files": [
-                    {
-                        "name": "q2_K",
-                        "filename": "dolphin-llama-13b.ggmlv3.q2_K.bin",
-                        "disk_space": 5510000000.0
-                    }
-                ]
-            }
-        ]
-    },
-    {
         "name": "Nous Hermes",
         "models": [
             {
@@ -32,16 +16,32 @@
         ]
     },
     {
-        "name": "Open Llama",
+        "name": "Griffin",
         "models": [
             {
-                "name": "Open-Llama-3B",
-                "repo": "SlyEcho/open_llama_3b_ggml",
+                "name": "Griffin-3B",
+                "repo": "TheBloke/Griffin-3B-GGML",
                 "files": [
                     {
                         "name": "q4_0",
-                        "filename": "open-llama-3b-q4_0.bin",
-                        "disk_space": 1920000000.0
+                        "filename": "griffin-3b.ggmlv3.q4_0.bin",
+                        "disk_space": 1930000000.0
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Dolphin",
+        "models": [
+            {
+                "name": "Dolphin-13B",
+                "repo": "TheBloke/Dolphin-Llama-13B-GGML",
+                "files": [
+                    {
+                        "name": "q2_K",
+                        "filename": "dolphin-llama-13b.ggmlv3.q2_K.bin",
+                        "disk_space": 5510000000.0
                     }
                 ]
             }
