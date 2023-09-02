@@ -1,5 +1,21 @@
 [
     {
+        "name": "Griffin",
+        "models": [
+            {
+                "name": "Griffin-3B",
+                "repo": "TheBloke/Griffin-3B-GGML",
+                "files": [
+                    {
+                        "name": "q4_0",
+                        "filename": "griffin-3b.ggmlv3.q4_0.bin",
+                        "disk_space": 1930000000.0
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "name": "Nous Hermes",
         "models": [
             {
