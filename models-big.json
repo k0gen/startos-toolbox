@@ -30,5 +30,21 @@
                 ]
             }
         ]
+    },
+    {
+        "name": "Open Llama",
+        "models": [
+            {
+                "name": "Open-Llama-3B",
+                "repo": "SlyEcho/open_llama_3b_ggml",
+                "files": [
+                    {
+                        "name": "q4_0",
+                        "filename": "open-llama-3b-q4_0.bin",
+                        "disk_space": 1920000000.0
+                    }
+                ]
+            }
+        ]
     }
 ]
