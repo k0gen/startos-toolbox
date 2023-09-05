@@ -30,5 +30,21 @@
                 ]
             }
         ]
+    },
+    {
+        "name": "Tiny Stories",
+        "models": [
+            {
+                "name": "TinyStories-1M",
+                "repo": "s3nh/TinyLLama-v0-GGML",
+                "files": [
+                    {
+                        "name": "q8_0",
+                        "filename": "TinyLLama-v0.ggmlv3.q8_0.bin",
+                        "disk_space": 5370000.0
+                    }
+                ]
+            }
+        ]
     }
 ]
