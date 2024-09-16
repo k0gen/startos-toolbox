@@ -82,16 +82,17 @@ echo "===================================================================" >> "$
 # Prompt user to send the log file to a Start9 Technician
 echo "System debug information has been collected in $OUTPUT_FILE."
 echo ""
-read -p "Would you like to send this log file to a Start9 Technician? (yes/no): " SEND_LOG
+echo "Would you like to send this log file to a Start9 Technician? (yes/no)"
+read SEND_LOG
 
 if [[ "$SEND_LOG" == "yes" || "$SEND_LOG" == "y" ]]; then
-    if command_exists "wormhole"; then
+    if command -v wormhole >/dev/null 2>&1; then
         echo ""
         echo "==================================================================="
-        echo "      Please copy the wormhole link below and paste it into a       "
-        echo "            message to the Start9 support team.                    "
+        echo "      Running wormhole to send the file. Please follow the          "
+        echo "      instructions and provide the code to the Start9 support team. "
         echo "==================================================================="
-        WORMHOLE_OUTPUT=$(wormhole send "$OUTPUT_FILE")
+        wormhole send "$OUTPUT_FILE"
         echo "==================================================================="
     else
         echo "Error: wormhole command not found."
