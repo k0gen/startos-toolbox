@@ -48,9 +48,9 @@ Collects comprehensive system debug information for StartOS.
 
 To run, ssh in to StartOS and paste this to shell prompt:
 ```
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/k0gen/startos-toolbox/main/gather_debug_info.sh)"
+curl -sSL https://raw.githubusercontent.com/k0gen/startos-toolbox/main/gather_debug_info.sh -o gather_debug_info.sh && chmod +x gather_debug_info.sh && sudo ./gather_debug_info.sh
 ```
-or download and run locally
+or manually download, examine and run locally
 ```
 curl -o gather_debug_info.sh https://raw.githubusercontent.com/k0gen/startos-toolbox/main/gather_debug_info.sh sudo sh gather_debug_info.sh
 ```
