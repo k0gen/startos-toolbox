@@ -42,3 +42,16 @@ or download and run locally
 curl -o tor-check.sh https://raw.githubusercontent.com/k0gen/startos-toolbox/main/tor-fix.sh
 sh tor-fix.sh
 ```
+
+## 🔍 gather_debug_info.sh
+Collects comprehensive system debug information for StartOS.
+
+To run, ssh in to StartOS and paste this to shell prompt:
+```
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/k0gen/startos-toolbox/main/gather_debug_info.sh)"
+```
+or download and run locally
+```
+curl -o gather_debug_info.sh https://raw.githubusercontent.com/k0gen/startos-toolbox/main/gather_debug_info.sh sudo sh gather_debug_info.sh
+```
+This script collects detailed system information including StartOS version, CPU, memory, storage, network, and more. It saves the information to a file and offers to send it to Start9 support using the `wormhole` command.
