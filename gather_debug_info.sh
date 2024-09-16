@@ -49,6 +49,9 @@ run_command "start-cli --version; start-cli git-info" "StartOS CLI version and G
 run_command "hostname" "Hostname of the system"
 run_command "uname -a" "Kernel version and system architecture"
 
+# Services Info
+run_command "podman stats --no-stream" "All Running Services"
+
 # Collecting CPU information
 run_command "lscpu" "CPU architecture information"
 run_command "cat /proc/cpuinfo" "Detailed CPU information"
