@@ -1,0 +1,66 @@
+    ▄▄▀▀▀▀▀▄▄
+  ▄▀    ▄    ▀▄      ▄▄▄▄▄  ▄▄▄▄▄▄▄    ▄      ▄▄▄▄▄   ▄▄▄▄▄▄▄ ▄██████▄ ▄██████
+ █     █ █     █    █          █      █ █     █    ▀▄    █    ██    ██ ██     
+█     █   █     █   ▀▄▄▄▄      █     █   █    █ ▄▄▄▀     █    ██    ██ ▀█████▄
+█    █     █    █        █     █    █     █   █  ▀▄      █    ██    ██      ██
+ █  █       █  █    ▄▄▄▄▄▀     █   █       █  █    ▀▄    █    ▀██████▀ ██████▀
+   █         █
+     ▀▀▄▄▄▀▀                                                  v0.4.0-alpha.10
+
+   jolly-aces (aarch64)
+   Git Hash: c67a9e217df49eeb5f85fec69d621af4005256ad ~ dev
+
+📊 System Health Overview
+
+   ⏱️ Uptime: 2:54 0
+   📈 Load: 0.26, 0.09, 0.05
+   🧠 Memory: 852MB used / 3913MB total (21.8%)
+   💾 Root: 4% used (64M/2.0G)
+   📦 Package Data: 1% used (191M/40G)
+
+🛡️ StartOS Services
+
+   📊 Services: 2 running, 3 stopped (5 total)
+   ✅ Health Status: All running services healthy
+   📋 Pending Tasks: 3
+   ⚡  Available Actions: 9
+   🏃 Active Services: searxng filebrowser vaultwarden
+
+💾 Backup & Updates
+
+   📦 System Backup: ❌ Never backed up
+   🔄 Service Backups: ❌ No services backed up
+   🔄 Updates: ⚠️  Available
+
+🌐 Network & Security
+
+   🌐 WAN IP: 37.31.152.33
+   🏠 Local IP: 192.168.64.5
+   🔗 Active Interfaces: 7
+   📶 WiFi: ⚠️  Enabled but not configured
+   🧅 Onion Services: 6 active
+   🕐 NTP: Synced
+   📧 SMTP: ⚠️  Not configured
+   👥 Active Sessions: 0
+
+🔧 Quick Access
+
+ * Web Interface:  https://jolly-aces.local
+ * Documentation:  https://docs.start9.com
+ * Support:        https://start9.com/contact
+ * Source Code:    https://github.com/Start9Labs/start-os
+
+💡 Administrative Commands
+
+ * start-cli package list      - List installed packages
+ * start-cli package logs <id> - View service logs
+ * start-cli db dump           - Full system status
+ * start-cli server backup     - Create system backup
+ * df -h /media/startos/data    - Check package data usage
+ * systemctl status startos     - StartOS daemon status
+
+⚠️  CRITICAL: No system backup found!
+   Run: start-cli server backup
+
+──────────────────────────────────────────────────────────
+ StartOS Health Dashboard | Services: 2/5 | 2025-09-08 15:16 UTC
