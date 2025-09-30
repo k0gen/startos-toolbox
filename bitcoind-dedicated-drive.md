@@ -43,11 +43,18 @@ mv /embassy-data/package-data/volumes/bitcoind/data/main /embassy-data/package-d
 
 ---
 
-## 4. Set up fstab for Automatic Mounting
+## 4. Set up fstab for Automatic Mounting (**chroot environment!**)
 
+**Enter chroot upgrade environment:**
+```
+sudo /usr/lib/startos/scripts/chroot-and-upgrade
+```
+
+Identify your drive using `blkid`:
 ```
 blkid /dev/sda1
 ```
+
 - Edit `/etc/fstab` and **add** (replace UUID):
   ```
   UUID=<uuid-here> /mnt/bitcoin-ssd ext4 defaults,noatime,nofail 0 2
@@ -55,12 +62,7 @@ blkid /dev/sda1
 
 ---
 
-## 5. Create Bind-Mount Script and Service (**chroot environment!**)
-
-**Enter chroot upgrade environment:**
-```
-sudo /usr/lib/startos/scripts/chroot-and-upgrade
-```
+## 5. Create Bind-Mount Script and Service
 
 ### Create the script:
 ```
@@ -137,8 +139,8 @@ sudo rm -rf /embassy-data/package-data/volumes/bitcoind/data/main.backup
 
 ## TL;DR Checklist
 
-1. As `sudo -i`: Partition, format, mount, copy, backup, edit `/etc/fstab`.
-2. As chroot upgrade: Create bind-mount script & systemd unit, enable, exit chroot (triggers auto-reboot).
+1. As `sudo -i`: Partition, format, mount, copy and backup.
+2. As chroot upgrade: Edit `/etc/fstab`, create bind-mount script & systemd unit, enable, exit chroot (triggers auto-reboot).
 3. After reboot: verify, clean up old data.
 
 ---
